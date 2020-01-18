@@ -1,5 +1,3 @@
-
-
 #ifndef ALU_H
 #define ALU_H
 
@@ -12,13 +10,14 @@ SC_MODULE(alu) {
     sc_in<bool> op;
     sc_in<sc_int<8>> a_in;
     sc_in<sc_int<8>> b_in;
+    sc_out<sc_int<8>> result;
 
     void alu_method();
 
     SC_CTOR(alu) {
         SC_METHOD(alu_method);
-        dont_intialize();
+        dont_initialize();
         sensitive << clk.pos();
     } 
-}
+};
 #endif

@@ -1,11 +1,14 @@
 #include "alu.h"
 
 void alu :: alu_method() {
-    sc_int<8> a_in, b_in;
+    sc_int<8> a, b;
+    a = a_in.read();
+    b = b_in.read();
 
-    if (enable.read() == 0) {
-        cout <<" A Data = " data.to_string(SC_BIN)
-    } else {
-        cout << "Not Enabled" << endl;
+    switch(op.read()) {
+        case 0: result.write(a-b);
+                break;
+        case 1: result.write(a+b);
+                break;
     }
 }

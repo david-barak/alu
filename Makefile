@@ -18,8 +18,8 @@ LIBRARIES = -L. -L$(SYSTEMC_HOME)/$(LINUXLIB) -lsystemc -lm
 RPATH = -Wl,-rpath=$(SYSTEMC_HOME)/$(LINUXLIB)
 
 PROGRAM = alu.x
-SRCS    =  alu.cpp barrelshift.cpp
-OBJS    =  alu.o barrelshift.o
+SRCS    =  alu.cpp barrelshift.cpp alu_main.cpp
+OBJS    =  alu.o barrelshift.o alu_main.o
 
 all : $(PROGRAM)
 
