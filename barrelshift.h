@@ -22,7 +22,7 @@ SC_MODULE(barrel_shift) {
         SC_CTOR(barrel_shift) {
 
         SC_METHOD(barrel_method);
-	dont_initialize();
+		dont_initialize();
         sensitive << clk.pos(); //edge sensitive
     }
 

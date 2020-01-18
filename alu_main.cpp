@@ -6,7 +6,7 @@
 int sc_main(int argc, char* argv[]) {
 
     if (strcmp(argv[0], "./alu.x") == 0 && argc == 1) {
-        //make_alu();
+        make_alu();
 
     } else if (strcmp(argv[1], "-h") == 0) {
         cout << "Usage: ./alu.x" << endl;

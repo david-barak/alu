@@ -7,10 +7,10 @@ void make_alu();
 
 SC_MODULE(alu) {
     sc_in<bool> clk;
-    sc_in<bool> op;
+    sc_in<bool> op_in;
     sc_in<sc_int<8>> a_in;
     sc_in<sc_int<8>> b_in;
-    sc_out<sc_int<8>> result;
+    sc_out<sc_int<8>> result_out;
 
     void alu_method();
 
