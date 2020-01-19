@@ -17,7 +17,7 @@ SC_MODULE(alu) {
     SC_CTOR(alu) {
         SC_METHOD(alu_method);
         dont_initialize();
-        sensitive << clk.pos();
+        sensitive << clk.neg();
     } 
 };
 #endif

@@ -3,16 +3,16 @@
 void alu :: alu_method() {
     sc_int<8> a, b, result;
     a = a_in.read();
-    cout << "First Number = " << a.to_string(SC_BIN) << endl;
+    cout << "First Number          = " << a.to_string() << endl;
     b = b_in.read();
-    cout << "Second Number = " << b.to_string(SC_BIN) << endl;
+    cout << "Second Number         = " << b.to_string() << endl;
 
     switch(op_in.read()) {
         case 0: result = a-b;
-                cout << "Result of Subtraction = " << result.to_string(SC_BIN) << endl;
+                cout << "Result of Subtraction = " << result.to_string() << endl;
                 break;
         case 1: result = a+b;
-                cout << "Result of Addition = " << result.to_string(SC_BIN) << endl;
+                cout << "Result of Addition    = " << result.to_string() << endl;
                 break;
     }
 

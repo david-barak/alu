@@ -20,6 +20,7 @@ void barrel_shift :: barrel_method(){
 
 				data[0] = 0;
 				break;
+
 			// Right Shift
 			case 1:
 				cout << "Arithmetic Shift Right by " << shift << " bits" << endl;
@@ -30,7 +31,8 @@ void barrel_shift :: barrel_method(){
 				}
 
 				break; 
-		}
+		} 
+
 	} else {
 		cout << "Barrel Shifter Disabled." << endl;
 		

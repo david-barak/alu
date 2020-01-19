@@ -1,5 +1,5 @@
 $date
-     Jan 18, 2020       20:51:05
+     Jan 19, 2020       09:09:42
 $end
 
 $version
@@ -11,15 +11,16 @@ $timescale
 $end
 
 $scope module SystemC $end
-$var wire    1  aaaaa  Enable       $end
-$var wire    8  aaaab  Data_In [7:0]  $end
-$var wire    1  aaaac  Left_Right       $end
-$var wire    3  aaaad  Shift_Amount [2:0]  $end
-$var wire    8  aaaae  Data_Out [7:0]  $end
-$var wire    8  aaaaf  A [7:0]  $end
-$var wire    8  aaaag  B [7:0]  $end
-$var wire    1  aaaah  OP       $end
-$var wire    8  aaaai  Result [7:0]  $end
+$var wire    1  aaaaa  Clock       $end
+$var wire    1  aaaab  Enable       $end
+$var wire    8  aaaac  Data_In [7:0]  $end
+$var wire    1  aaaad  Left_Right       $end
+$var wire    3  aaaae  Shift_Amount [2:0]  $end
+$var wire    8  aaaaf  Data_Out [7:0]  $end
+$var wire    8  aaaag  A [7:0]  $end
+$var wire    8  aaaah  B [7:0]  $end
+$var wire    1  aaaai  OP       $end
+$var wire    8  aaaaj  Result [7:0]  $end
 $upscope $end
 $enddefinitions  $end
 
@@ -28,30 +29,80 @@ All initial values are dumped below at time 0 sec = 0 timescale units.
 $end
 
 $dumpvars
-0aaaaa
-b10 aaaab
-0aaaac
-b1 aaaad
-b10 aaaae
-b0 aaaaf
-b0 aaaag
-0aaaah
-b0 aaaai
+1aaaaa
+0aaaab
+b10 aaaac
+0aaaad
+b1 aaaae
+b10 aaaaf
+b100 aaaag
+b10 aaaah
+0aaaai
+b0 aaaaj
 $end
 
+#5
+0aaaaa
+b10 aaaaj
+
 #10
-b100 aaaaf
+1aaaaa
+b1010 aaaac
+b1010 aaaaf
 b10 aaaag
-b10 aaaai
+b1010 aaaah
+1aaaai
+
+#15
+0aaaaa
+b1100 aaaaj
 
 #20
-b1010 aaaab
-b1010 aaaae
+1aaaaa
+1aaaab
+b10 aaaac
+b10 aaaae
+b1000 aaaaf
+b1010 aaaag
+b1000 aaaah
+0aaaai
+
+#25
+0aaaaa
+b10 aaaaj
 
 #30
-b10 aaaaf
-b1010 aaaag
-1aaaah
-b1100 aaaai
+1aaaaa
+1aaaad
+b1 aaaae
+b1 aaaaf
+b1 aaaah
+
+#35
+0aaaaa
+b1001 aaaaj
 
 #40
+1aaaaa
+0aaaad
+b10 aaaae
+b1000 aaaaf
+b1000 aaaah
+1aaaai
+
+#45
+0aaaaa
+b10010 aaaaj
+
+#50
+1aaaaa
+b10000 aaaac
+1aaaad
+b100 aaaaf
+b100 aaaah
+
+#55
+0aaaaa
+b1110 aaaaj
+
+#60
