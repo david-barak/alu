@@ -1,0 +1,38 @@
+$date
+	Sat Jan 18 20:15:58 2020
+$end
+$version
+	GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+$end
+$timescale
+	1ns
+$end
+$scope module SystemC $end
+$var wire 8 % Data_In[7:0] $end
+$var wire 1 # Left_Right $end
+$var wire 1 " Enable $end
+$var wire 3 $ Shift_Amount[2:0] $end
+$var wire 8 & Data_Out[7:0] $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+#0
+0"
+b1 $
+b1000 %
+0#
+b1000 &
+#10
+b10000 &
+1"
+#20
+b100 &
+1#
+#30
+b10000000 %
+b11000000 &
+#40
+b0 &
+b111 $
+b1111111 %
+#50

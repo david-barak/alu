@@ -1,0 +1,57 @@
+$date
+     Jan 18, 2020       20:51:05
+$end
+
+$version
+ SystemC 2.3.3-Accellera --- Jan 17 2020 14:28:49
+$end
+
+$timescale
+     1 ns
+$end
+
+$scope module SystemC $end
+$var wire    1  aaaaa  Enable       $end
+$var wire    8  aaaab  Data_In [7:0]  $end
+$var wire    1  aaaac  Left_Right       $end
+$var wire    3  aaaad  Shift_Amount [2:0]  $end
+$var wire    8  aaaae  Data_Out [7:0]  $end
+$var wire    8  aaaaf  A [7:0]  $end
+$var wire    8  aaaag  B [7:0]  $end
+$var wire    1  aaaah  OP       $end
+$var wire    8  aaaai  Result [7:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+0aaaaa
+b10 aaaab
+0aaaac
+b1 aaaad
+b10 aaaae
+b0 aaaaf
+b0 aaaag
+0aaaah
+b0 aaaai
+$end
+
+#10
+b100 aaaaf
+b10 aaaag
+b10 aaaai
+
+#20
+b1010 aaaab
+b1010 aaaae
+
+#30
+b10 aaaaf
+b1010 aaaag
+1aaaah
+b1100 aaaai
+
+#40

@@ -16,6 +16,7 @@ void alu :: alu_method() {
                 break;
     }
 
+    cout << endl;
     result_out.write(result);
 }
 
@@ -34,7 +35,7 @@ void make_alu() {
     alu.clk(clk);
     alu.result_out(result);
 
-    tf = sc_create_vcd_trace_file("trace_file");
+    tf = sc_create_vcd_trace_file("alu_trace");
     tf->set_time_unit(1, SC_NS);
     sc_trace(tf, a, "A");
     sc_trace(tf, b, "B");
@@ -43,15 +44,25 @@ void make_alu() {
 
     cout << "Beginning Test of the Arithmetic Logic Unit Implementation..." << endl;
 
+    // Case 1: Subtraction
     a.write(2);
     b.write(2);
     op.write(0);
     sc_start(10, SC_NS);
-
     cout << endl;
+
+    // Case 2: Addition
     a.write(5);
     b.write(5);
     op.write(1);
     sc_start(10, SC_NS);
+    cout << endl;
+
+    // Case 3: Subtraction Resulting in Negative Number
+    a.write(5);
+    b.write(10);
+    op.write(0);
+    sc_start(10, SC_NS);
+    cout << endl;
 
 }
